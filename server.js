@@ -19,7 +19,7 @@ app.post('/worker', (req, res) => {
     const query =
         'INSERT INTO workers (name, lastname, username, type_id, id_number, profession_occupation_1, profession_occupation_2, profession_occupation_3, professional_license, email, mobile_phone, phone, address, neighborhood, city) VALUES ($1, $2, $3, $4, $5, $6, $NULL, $NULL, $NULL, $10, $11, $NULL, $13, $14, $15)'
     // TODO: create save BD to req.body
-    pool.query
+    pool.query()
 })
 
 app.get('/doctors', (req, res) => {
